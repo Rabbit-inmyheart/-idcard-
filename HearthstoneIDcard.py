@@ -4,6 +4,7 @@ import pickle
 dict_1 = {}
 num = 0
 filename = 'd\\hearthstone.pkl'#存储路径，自己填
+#爬取字典 因为11000的时候网页已经没有词条了，所以这里num是11000
 while(num<=11000):
     url = 'https://hearthstone.huijiwiki.com/index.php?title=%E5%B1%9E%E6%80%A7:'+'CardId&limit=500&offset=%d&value=&from=&until='%num
     r = requests.get(url)
